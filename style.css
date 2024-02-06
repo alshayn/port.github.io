@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #828282;
+}
+
+header {
+    margin-top: 25px;
+    margin-bottom: 43px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    column-gap: 42px;
+}
+
+.logo h1 {
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    font-weight: 100;
+    font-size: 24px
+}
+
+.logo p {
+    font-size: 16px;
+    font-weight: 100;
+}
+
+header button {
+    background-color: #D9D9D9;
+    font-family: 'Inter', sans-serif;
+    width: 241px;
+    height: 68px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 100;
+    transition-duration: 500ms;
+}
+
+header button:hover {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    column-gap: 65px;
+
+}
+
+.menu li {
+    padding: 5px 18px;
+    transition-duration: 500ms;
+    border-radius: 15px;
+}
+
+.menu li a {
+    font-size: 22px;
+    font-weight: 100;
+    text-decoration: none;
+    color: #000;
+}
+
+.menu li:hover {
+    background-color: #8B3099;
+}
+
+.desc p {
+    color: #fff;
+    font-size: 45px;
+    font-weight: 300;
+    margin: 0;
+    margin-bottom: 22px;
+}
+
+.works {
+    width: 263px;
+    height: 94px;
+    border-radius: 50px;
+    border: none;
+    font-size: 35px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    cursor: pointer;
+    transition-duration: 500ms;
+}
+
+.works:hover {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.about {
+    margin-bottom: 54px;
+}
+
+.skills {
+    background-color: #8B3099;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    font-size: 32px;
+    margin-bottom: 24px;
+}
+
+.skills h2 {
+    text-align: center;
+    padding-top: 108px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    text-decoration: underline;
+    font-size: 42px;
+    margin-bottom: 34px;
+}
+
+.skillsdesc {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 73px;
+}
+
+.myworks h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 32px;
+    font-weight: 200;
+    text-decoration: underline;
+    margin-bottom: 60px;
+}
+
+.myworks>p {
+    text-align: center;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 200;
+    margin-bottom: 96px;
+}
+
+.card {
+    width: 436px;
+    height: 336px;
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding: 36px;
+
+}
+
+.card h3 {
+    text-align: center;
+    font-weight: 200;
+    font-size: 32px;
+    margin: 0;
+    margin-bottom: 44px;
+}
+
+.card p {
+    text-align: center;
+    font-weight: 200;
+    font-size: 24px;
+    margin: 0;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 436px);
+    grid-template-rows: repeat(2, 336px);
+    justify-content: center;
+    align-items: center;
+    row-gap: 34px;
+    column-gap: 100px;
+}
+
+.myworks {
+    margin-bottom: 200px;
+}
+
+.contacts {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+form {
+    border: #000 dashed 10px;
+    width: 975px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+form p {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 200;
+    color: #fff;
+}
+
+input {
+    width: 600px;
+    height: 48px;
+    border-radius: 5px;
+    margin-bottom: 28px;
+    border: none;
+    background-color: #D9D9D9;
+    font-size: 22px;
+    font-weight: 100;
+    padding: 7px;
+}
+
+input:nth-child(3) {
+    margin-bottom: 43px;
+}
+
+textarea {
+    width: 600px;
+    height: 250px;
+    border: none;
+    background-color: #D9D9D9;
+    font-size: 22px;
+    font-weight: 100;
+    border-radius: 5px;
+    resize: none;
+    padding: 7px;
+    margin-bottom: 24px;
+}
+
+form button {
+    width: 600px;
+    height: 48px;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: #8B3099;
+    cursor: pointer;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 47px;
+}
+
+footer {
+    background-color: #8B3099;
+    padding-top: 40px;
+    padding-bottom: 62px;
+}
+
+footer p {
+    font-size: 25px;
+    color: #FFFFFF;
+    font-weight: 100;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 1140px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .container {
+        width: 960px;
+    }
+
+    .container .desc p {
+        font-size: 35px;
+    }
+
+    footer .container p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .container {
+        width: 720px;
+    }
+
+    .container .desc p {
+        font-size: 25px;
+    }
+
+    .works {
+        width: 200px;
+        height: 74px;
+
+    }
+
+    .about img {
+        width: 50%;
+    }
+
+    .menu {
+        column-gap: 0;
+    }
+
+    form {
+        width: auto;
+    }
+
+    footer .container p {
+        font-size: 15px;
+    }
+
+    .cards {
+        column-gap: 34px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        width: 540px;
+    }
+
+    .logo {
+        column-gap: 0;
+    }
+
+    .about .container {
+        flex-direction: column;
+
+    }
+
+    .about .desc {
+        margin-top: 25px;
+        width: 100%;
+    }
+
+    .about img {
+        width: 100%;
+    }
+
+    footer .container {
+        column-gap: 15px;
+    }
+
+    .social img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 667px) {
+    form {
+        width: 70%;
+    }
+
+    form input,
+    textarea {
+        width: 70%;
+    }
+
+    form button {
+        width: 70%;
+    }
+
+    .skillsdesc {
+        width: 90%;
+        font-size: 20px;
+    }
+
+    .menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 556px) {
+    header .container {
+        width: 315px;
+        column-gap: 15px;
+    }
+
+    .container {
+        width: 315px;
+    }
+
+    .logo img {
+        width: 90%;
+    }
+
+    .logo h1,
+    .logo p {
+        font-size: 90%;
+    }
+
+    header button {
+        width: 60%;
+        font-size: 90%;
+    }
+
+    .about .desc p {
+        font-size: 15px;
+
+    }
+
+    .about .desc {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about img {
+        width: 70%;
+    }
+
+    .footer-logo {
+        width: 70%;
+    }
+
+    header .container button {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 456px) {
+    .card {
+        width: 310px;
+    }
+
+    header img {
+        width: 80%;
+    }
+
+    header h1 {
+        display: none;
+    }
+
+    header p {
+        display: none;
+    }
+
+    footer .container {
+        column-gap: 1%;
+    }
+
+    form {
+        border: #000 dashed 2px;
+    }
+
+    textarea {
+        height: 150px;
+    }
+
+    .desc {
+        padding: 5px;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    header .container {
+        column-gap: 10px;
+        width: 315px;
+        justify-content: center;
+    }
+
+    .social {
+        column-gap: 1%;
+    }
+
+}
+
+.modal {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000031;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.modal-content {
+    padding: 20px;
+    background-color: #828282;
+    position: relative;
+    color: #fff;
+}
+
+.close {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 25px;
+}
